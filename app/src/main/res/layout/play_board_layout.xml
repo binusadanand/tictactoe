@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:background="@color/barium"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="@string/play_again"
+        android:visibility="visible" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/backend_thinking_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:visibility="invisible"
+        app:lottie_fileName="thinking.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <TableLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+        <TableRow>
+            <ImageView
+                android:id="@+id/tile1"
+                app:srcCompat="@drawable/blue_multiply"
+                android:background="@drawable/top_left_bkg"
+                android:padding="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <ImageView
+                android:id="@+id/tile2"
+                app:srcCompat="@drawable/blue_multiply"
+                android:background="@drawable/top_middle_bkg"
+                android:padding="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <ImageView
+                android:id="@+id/tile3"
+                app:srcCompat="@drawable/blue_multiply"
+                android:background="@drawable/top_right_bkg"
+                android:padding="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                />
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:id="@+id/tile4"
+                app:srcCompat="@drawable/blue_multiply"
+                android:background="@drawable/left_middle_bkg"
+                android:padding="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                />
+            <ImageView
+                android:id="@+id/tile5"
+                app:srcCompat="@drawable/blue_multiply"
+                android:padding="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                />
+            <ImageView
+                android:id="@+id/tile6"
+                app:srcCompat="@drawable/blue_multiply"
+                android:background="@drawable/right_middle_bkg"
+                android:padding="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                />
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:id="@+id/tile7"
+                app:srcCompat="@drawable/blue_multiply"
+                android:background="@drawable/bottom_left_bkg"
+                android:padding="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                />
+            <ImageView
+                android:id="@+id/tile8"
+                app:srcCompat="@drawable/yellow_zero"
+                android:background="@drawable/bottom_middle_bkg"
+                android:padding="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                />
+            <ImageView
+                android:id="@+id/tile9"
+                app:srcCompat="@drawable/blue_multiply"
+                android:background="@drawable/bottom_right_bkg"
+                android:padding="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

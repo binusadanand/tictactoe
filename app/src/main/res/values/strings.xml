@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="play_again">Play Again</string>
+    <string name="tile_already_played_msg">You have already played this tile</string>
+    <string name="starting_new_game_msg">Start a new game...</string>
+
+    <string name="player_wins_msg">HOORAY!!..you Win</string>
+    <string name="ai_wins_msg">Opps!!! Dark side Wins</string>
+    <string name="draw_wins_msg">Uhmm!!! It\'s a Draw, try again</string>
+</resources>
